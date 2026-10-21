@@ -1,0 +1,59 @@
+:root {
+  /* Paleta Cliente (Terracota) */
+  --customer-primary: #E06D53;
+  --customer-primary-hover: #c95c44;
+  --customer-bg: #F9F6F0;
+  --customer-text: #222222;
+  --customer-card-bg: #ffffff;
+  --customer-border: #cccccc;
+
+  /* Paleta Artista (Verde Azulado) */
+  --artist-primary: #2A6F6B;
+  --artist-primary-hover: #215a56;
+  --artist-bg: #EEF4F3;
+  --artist-text: #1E292B;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Clases de utilidad simples */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-primary-customer {
+  background-color: var(--customer-primary);
+  color: white;
+}
+
+.btn-primary-customer:hover {
+  background-color: var(--customer-primary-hover);
+}
+
+.card {
+  background-color: var(--customer-card-bg);
+  border: 1px solid var(--customer-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
